@@ -47,10 +47,6 @@ html {
 /*
     Customize the background color and color to match your design.
 */
-::-moz-selection {
-  background: #00b2ff;
-  color: white;
-}
 
 ::selection {
   background: #00b2ff;
