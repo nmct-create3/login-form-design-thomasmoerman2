@@ -1,19 +1,19 @@
 /*---------------------------------------/*
- # TOOLS
-/*---------------------------------------*/
-/*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
+
+:root {
+  /* CSS variables here */
+}
+
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-* {
   padding: 0;
   margin: 0;
   font-size: 100%;
@@ -28,11 +28,13 @@ img {
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
+
 /*
     Elements: Page
     ---
     Default markup for page level elements
 */
+
 html {
   font-size: 100%;
   line-height: 1.5;
@@ -58,17 +60,18 @@ html {
     ---
     Default markup for typographic elements
 */
+
 h1 {
-  font-size: 1.8020324707rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
 
 h2 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1.423828125rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -110,13 +113,13 @@ li ol {
 
 blockquote {
   font-style: italic;
-  font-size: 1.423828125rem;
+  font-size: 1.375rem;
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
 
 figcaption {
-  font-size: 0.8888888889rem;
+  font-size: 0.75rem;
   line-height: 1rem;
   margin-top: 0.5rem;
   color: #73858c;
@@ -157,12 +160,6 @@ a:active {
 .o-row {
   padding: 1.5rem 1.5rem 0;
   display: flow-root;
-}
-
-@media (min-width: 48.0625em) {
-  .o-row--l {
-    padding: 3rem 3rem 1.5rem;
-  }
 }
 
 /*
