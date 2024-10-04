@@ -8,6 +8,7 @@
   /* Light */
   /* color */
   --icon: #3385ff;
+  --accent-color: #3385ff;
   --blue-10: #ffffff;
   --blue-20: #d6e7ff;
   --blue-30: #adceff;
@@ -29,6 +30,7 @@
   --gray-80: #4c5054;
   --gray-90: #35393d;
   --c-form-field-input: #ffffff;
+  --outline-color-default: rgba(51, 133, 255, 0.3);
   /* number */
   --border-s: 0.1875rem;
   --border-m: 0.375rem;
@@ -193,12 +195,12 @@ h2 {
 }
 
 label {
-  color: var(--gray-60, #64676c);
+  color: var(--gray-60);
   font-family: Inter;
-  font-size: var(--scale-2, 0.875rem);
+  font-size: var(--scale-2);
   font-style: normal;
   font-weight: 400;
-  line-height: var(--whitespace-5, 1rem);
+  line-height: var(--whitespace-5);
 }
 
 input:focus,
@@ -214,7 +216,7 @@ a:visited {
   font-size: var(--scale-2, 0.875rem);
   font-style: normal;
   font-weight: 400;
-  line-height: var(--whitespace-5, 1rem); /* 114.286% */
+  line-height: var(--whitespace-5); /* 114.286% */
   text-decoration-line: underline;
 }
 
@@ -228,20 +230,25 @@ a:active {
 
 input[type="submit"] {
   display: flex;
-  height: var(--whitespace-9, 3rem);
-  padding: var(--whitespace-4, 0.75rem) 0rem;
+  height: var(--whitespace-9);
+  padding: var(--whitespace-4) 0rem;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
   width: 100%;
+  border: 1px solid var(--blue-60);
   border-radius: var(--radius-s, 0.1875rem);
-  background: var(--background-brand, #3385ff);
+  background: var(--blue-60);
   color: var(--Gray-0, #fff);
   border: none;
-  font-size: var(--scale-3, 1rem);
+  font-size: var(--scale-3);
   font-style: normal;
   font-weight: 600;
-  line-height: var(--whitespace-6, 1.5rem);
+  line-height: var(--whitespace-6);
+  -webkit-border-radius: var(--radius-s, 0.1875rem);
+  -moz-border-radius: var(--radius-s, 0.1875rem);
+  -ms-border-radius: var(--radius-s, 0.1875rem);
+  -o-border-radius: var(--radius-s, 0.1875rem);
 }
 
 /*---------------------------------------/*
@@ -277,7 +284,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--whitespace-9, 3rem);
+  gap: var(--whitespace-9);
   flex-shrink: 0;
 }
 
@@ -307,17 +314,21 @@ input[type="submit"] {
 }
 
 .c-card {
-  border-radius: var(--radius, 0.375rem);
-  background: var(--gray-0, #fff);
+  border-radius: var(--radius);
+  background: var(--gray-0);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   display: flex;
   width: max-content;
   height: max-content;
-  padding: var(--whitespace-9, 3rem);
+  padding: var(--whitespace-7) var(--whitespace-9) 0;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--whitespace-9, 3rem);
+  gap: var(--whitespace-9);
   align-self: stretch;
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
 }
 
 .c-card__title {
@@ -337,13 +348,19 @@ input[type="submit"] {
 
 .c-card__footer {
   display: flex;
-  padding: 1.5rem var(--whitespace-9, 3rem);
+  padding: 1.5rem var(--whitespace-9);
   flex-direction: column;
   align-items: center;
   height: max-content;
   gap: 0.5rem;
   align-self: stretch;
-  border-top: 1px solid var(--gray-10, #e2e5e8);
+  border-top: 1px solid var(--gray-10);
+  color: var(--gray-50);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 114.286% */
 }
 
 .c-form-field--flex {
@@ -389,14 +406,18 @@ input[type="submit"] {
 .c-form-field input,
 .c-form-field__paswword input {
   display: flex;
-  padding: var(--whitespace-5, 1rem) var(--whitespace-9, 3rem) var(--whitespace-5, 1rem) var(--whitespace-5, 1rem);
+  padding: var(--whitespace-5, 1rem) var(--whitespace-9) var(--whitespace-5, 1rem) var(--whitespace-5, 1rem);
   align-items: center;
   gap: 1.5rem;
   width: 100%;
   align-self: stretch;
   border-radius: var(--radius-s, 0.1875rem);
-  border: 0.0625rem solid var(--gray-10, #e2e5e8);
-  background-color: var(--c-form-field-input, #fff);
+  border: 0.0625rem solid var(--gray-10);
+  background-color: var(--c-form-field-input);
+  -webkit-border-radius: var(--radius-s, 0.1875rem);
+  -moz-border-radius: var(--radius-s, 0.1875rem);
+  -ms-border-radius: var(--radius-s, 0.1875rem);
+  -o-border-radius: var(--radius-s, 0.1875rem);
 }
 
 .c-form-field.c-form-field--option {
@@ -404,7 +425,7 @@ input[type="submit"] {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  gap: var(--whitespace-3, 0.5rem);
+  gap: var(--whitespace-3);
   height: max-content;
   position: relative;
 }
@@ -414,7 +435,7 @@ input[type="submit"] {
   height: 1rem;
   opacity: 0;
   position: absolute;
-  /* accent-color: var(--blue-10) ; */
+  /* accent-color: var(--accent-color) ; */
 }
 
 .c-form-field.c-form-field--option input[type="checkbox"]:checked ~ .c-form-field__checkbox svg {
@@ -425,8 +446,8 @@ input[type="submit"] {
   display: block;
   width: 1rem;
   height: 1rem;
-  border: 1px solid var(--gray-30, #fff);
-  background-color: var(--c-form-field-input, #fff);
+  border: 1px solid var(--gray-30);
+  background-color: var(--c-form-field-input);
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -445,6 +466,20 @@ input[type="submit"] {
   -moz-transition: 100ms ease-in-out;
   -ms-transition: 100ms ease-in-out;
   -o-transition: 100ms ease-in-out;
+}
+
+.c-form-field input:focus,
+.c-form-field input:focus-visible,
+.c-form-field__paswword input:focus,
+.c-form-field__paswword input:focus-visible,
+input[type="submit"]:focus,
+input[type="submit"]:focus-visible,
+input[type="submit"]:focus ~ .c-form-field__checkbox,
+input[type="submit"]:focus-visible ~ .c-form-field__checkbox {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--outline-color-default);
+  border: 1px solid var(--blue-60);
+  border-radius: var(--radius-s, 0.1875rem);
 }
 
 /*---------------------------------------/*
