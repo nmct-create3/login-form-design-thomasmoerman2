@@ -1,7 +1,7 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Collection */
 :root {
@@ -147,7 +147,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--scale-4, 1.125rem);
   font-weight: 700;
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
@@ -192,12 +192,22 @@ h2 {
   margin-bottom: 0;
 }
 
+label {
+  color: var(--gray-60, #64676c);
+  font-family: Inter;
+  font-size: var(--scale-2, 0.875rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--whitespace-5, 1rem);
+}
+
 input:focus,
 input:focus-visible {
   outline-color: var(--blue-50);
 }
 
-a, a:visited {
+a,
+a:visited {
   transition: all 0.1s ease-in-out;
   color: var(--gray-50, #929599);
   text-align: center;
@@ -336,10 +346,10 @@ input[type="submit"] {
   border-top: 1px solid var(--gray-10, #e2e5e8);
 }
 
-.c-form-field--flex{
+.c-form-field--flex {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .c-form-passwordForgot {
