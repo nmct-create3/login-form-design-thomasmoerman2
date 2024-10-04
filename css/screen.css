@@ -336,6 +336,12 @@ input[type="submit"] {
   border-top: 1px solid var(--gray-10, #e2e5e8);
 }
 
+.c-form-field--flex{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
 .c-form-passwordForgot {
   display: flex;
   justify-content: center;
